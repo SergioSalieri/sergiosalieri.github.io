@@ -115,7 +115,7 @@ body {
 .section {
     max-width: 800px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     background: transparent !important;
     border-radius: 8px;
     box-shadow: none !important;
@@ -355,7 +355,6 @@ a:hover {
     display: flex;
     gap: 1.5rem; /* Расстояние между иконками */
     justify-content: center;
-
     margin-top: 1rem;
 }
 
@@ -368,7 +367,7 @@ a:hover {
 .portfolio-link {
     font-size: 1.2rem;
     display: block;
-    margin: 3rem 0;
+    margin: 2rem 0;
     text-align: center;
     color: #4F46E5;
     text-decoration: none;
