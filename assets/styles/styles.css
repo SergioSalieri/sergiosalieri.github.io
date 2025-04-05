@@ -154,14 +154,14 @@ body {
 .section-text {
     max-width: 800px;
     font-size: 1.1rem;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #fff !important;
     margin: 0 auto;
-    margin-bottom: 1.5rem;
 }
 
 /* Социальные кнопки */
 .social-links {
+    flex-direction: column;
     display: flex;
     gap: 1rem;
     margin: 1.5rem 0;
@@ -247,8 +247,11 @@ a:hover {
     }
 
    .social-button img { filter: invert(1); }
-    
+
+    @media (max-width: 768px) {
 .profile {
+    flex-direction: column;
+    text-align: center;
     display: flex;
     margin-top: 4.2rem;
     margin-bottom: 5rem;
@@ -260,6 +263,7 @@ a:hover {
     border-radius: 12px;
     box-shadow: none !important;
 }
+    }
 
 .profile .avatar {
     width: 142px;
@@ -403,22 +407,4 @@ a:hover {
     content: "→";
     margin-right: 0.5rem;
     color: var(--accent-color);
-}
-
-.footer__social-item img {
-    width: 32px;
-    height: 32px;
-}
-
-.footer__social-item[href*="telegram"] img {
-    filter: none !important;
-}
-
-.footer__social-item[href*="whatsapp"] img {
-    filter: none !important;
-}
-
-/* Ховер-эффект */
-.footer__social-item:hover img {
-    transform: scale(1.1);
 }
