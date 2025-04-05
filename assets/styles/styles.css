@@ -83,9 +83,86 @@ meter {
     -webkit-user-drag: element;
 }
 
+:root {
+    --primary-color: #2A2A2A;
+    --accent-color: #4F46E5;
+    --text-color: #374151;
+    --light-gray: #F3F4F6;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333131;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Заголовки */
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Социальные кнопки */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    background: var(--light-gray);
+    color: var(--text-color);
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Списки */
+.knowledge-list {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.knowledge-list li {
+    margin: 0.8rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.knowledge-list li::before {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: 0.7rem;
+    width: 6px;
+    height: 6px;
+    background: var(--accent-color);
+    border-radius: 50%;
 }
 
 a {
@@ -258,10 +335,20 @@ a:hover {
     margin-bottom: 0.8rem;
 }
 
+/* Футер */
 .footer {
-    margin-top: 2rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .footer__social-item img {
