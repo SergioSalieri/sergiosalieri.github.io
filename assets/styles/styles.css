@@ -111,15 +111,28 @@ body {
 }
 
 /* Стили для секций */
+@media (max-width: 768px) {
 .section {
-    margin: 2.5rem 0;
-    padding: 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
     background: transparent !important;
     border-radius: 8px;
     box-shadow: none !important;
     opacity: 1;
     transform: translateY(20px);
     transition: all 0.4s ease;
+}
+
+.section-title {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff !important;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4F46E5;
+}
 }
 
 .section.visible {
@@ -132,15 +145,6 @@ body {
     content: "▹";
     color: var(--accent-color);
     margin-right: 0.8rem;
-}
-
-.section-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #fff !important;
-    margin-bottom: 1.2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #4F46E5;
 }
 
 .section-text {
@@ -337,7 +341,7 @@ a:hover {
 /* Футер */
 .footer {
     margin-top: 4rem;
-    padding: 2rem 0;
+    padding: 2rem 1.5rem;
     border-top: 1px solid #eee;
     display: flex;
     justify-content: space-between;
@@ -347,6 +351,14 @@ a:hover {
         gap: 1rem;
 }
 
+.footer__social {
+    display: flex;
+    gap: 1.5rem; /* Расстояние между иконками */
+    justify-content: center;
+
+    margin-top: 1rem;
+}
+
 .copyright {
     font-size: 0.9rem;
     color: var(--text-color);
@@ -354,9 +366,13 @@ a:hover {
 }
 
 .portfolio-link {
-    color: var(--accent-color);
+    font-size: 1.2rem;
+    display: block;
+    margin: 3rem 0;
+    text-align: center;
+    color: #4F46E5;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: opacity 0.2s ease;
 }
 
