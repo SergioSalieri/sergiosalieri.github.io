@@ -247,7 +247,6 @@ a:hover {
 
    .social-button img { filter: invert(1); }
 
-    @media (max-width: 768px) {
 .profile {
     display: flex;
     margin-top: 4.2rem;
@@ -260,7 +259,6 @@ a:hover {
     border-radius: 12px;
     box-shadow: none !important;
 }
-    }
 
 .profile .avatar {
     width: 142px;
