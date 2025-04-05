@@ -111,7 +111,6 @@ body {
 }
 
 /* Стили для секций */
-@media (max-width: 768px) {
 .section {
     max-width: 800px;
     margin: 2rem auto;
@@ -128,11 +127,16 @@ body {
     width: 100%;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #fff !important;
+    color: #fff;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #4F46E5 !important;
 }
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem; /* Только уменьшение размера для мобильных */
+    }
 }
 
 .section.visible {
@@ -233,7 +237,6 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: #c8cbcd;
@@ -244,11 +247,7 @@ a:hover {
     }
 
    .social-button img { filter: invert(1); }
-    .footer__social-item img{
-        filter: invert(1);
-    }
-}
-
+    
 .profile {
     display: flex;
     margin-top: 4.2rem;
@@ -409,16 +408,14 @@ a:hover {
 .footer__social-item img {
     width: 32px;
     height: 32px;
-    margin-right: 4px;
-    transition: transform 0.3s ease;
 }
 
 .footer__social-item[href*="telegram"] img {
-    filter: invert(56%) sepia(97%) saturate(1583%) hue-rotate(165deg); /* Синий Telegram */
+    filter: none !important;
 }
 
 .footer__social-item[href*="whatsapp"] img {
-    filter: invert(65%) sepia(73%) saturate(440%) hue-rotate(88deg); /* Зеленый WhatsApp */
+    filter: none !important;
 }
 
 /* Ховер-эффект */
