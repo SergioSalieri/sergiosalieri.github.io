@@ -6,8 +6,8 @@
   <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
 </head>
 <body>
-<div class="main">
-  <div class="header">
+<div class="container">
+<header class="header">
     <a href="/">
       <span>EN</span>
     </a>
@@ -15,63 +15,57 @@
     <a href="/ru">
       <span>RU</span>
     </a>
-  </div>
-  <div class="content">
-    <div class="content__hello">
-      <img class="content__hello-img" src="/assets/img/avatar.png" alt="Avatar">
-      <div class="content__hello-text">
-                    <span class="content__name">
-                        <a href="/"> Hey, I'm Sergey.</a>
-                    </span>
-        <nav class="content__social">
-                     <a href="https://t.me/sergio_salieri" target="_blank" class="content__social-item">
+</header>
+</div>
+<section class="profile">
+      <img class="avatar" src="/assets/img/avatar.png" alt="Avatar">
+                    <div class="content__name">
+                        <h1 class="title">Hey, I'm Sergey</h1>
+                    </div>
+  <div class="social-links">
+                     <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
             <img src="/assets/img/icons/telegram.svg" alt="Telegram">
             <span>Telegram</span>
                      </a>
-          <a href="https://wa.me/79130495432" target="_blank" class="content__social-item">
+          <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
             <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
             <span>Whatsapp</span>
           </a>
-        </nav>
- <span class="content__description"> </br> </br> About Me 
-   <br/> I am an aspiring information security specialist and former system administrator 
+        </div>
+</section>
+        <section class="section">
+<h2 class="section-title">About Me</h2> 
+  <p class="section-text"> I am an aspiring information security specialist and former system administrator 
    with 3.5 years of experience. Over the past year, I have been actively studying both 
    theoretical and practical aspects of the field.
- </br> </br> Theoretical Knowledge:
- </br> &#9658; Proficient in protocols and standards such as the OSI model, TCP/IP stack, DHCP, and DNS.
- </br> &#9658; Familiar with information security tools: SIEM systems, DLP, IDS/IPS, NGFW, firewalls, hashing, and cryptography fundamentals.
- </br> &#9658; Knowledge of OWASP TOP 10, MITRE ATT&CK framework, attack types (e.g., DNS-related attacks, ARP spoofing), stages of cyberattacks, and web vulnerabilities.
- </br> &#9658; Understanding of regulatory frameworks: Russian Federal Laws (No. 149-FZ, 152-FZ, 187-FZ) and FSTEC standards (Order No. 17, Order No. 21).
- </br> </br> Practical Experience:
- </br> &#9658; Gained hands-on experience with tools such as Wireshark, Nmap, and Scanoval.
- </br> &#9658; Conducted attacks like SQL injection, XSS, and SSI using Kali Linux on a vulnerable Bwapp OS.
- </br> &#9658; Improved my Linux console and bash scripting skills.
- </br> &#9658; Future goals: Deepen my knowledge of Unix-like systems and learn C++ and Python programming.
- </span>
-    </div>
-    </div>
-  </div>
-    <div class="content__main">
-      <div class="content__main-item">
-        <div class="main-item__description">
-          <p>Portfolio - <a href="/example/simple.html">link</a></p>
-        </div>
-      </div>
-    </div>
-  <div class="footer">
-    <div>
-      <span>© Sergey Egormin</span>
-    </div>
-    <div>
-      <nav class="footer__social">
-        <a href="https://t.me/sergio_salieri" target="_blank" class="footer__social-item">
-          <img src="/assets/img/icons/telegram.svg" alt="Telegram">
+  </p>
+           </section>
+          <h2 class="section-title">Theoretical Knowledge:</h2>
+          <ul class="knowledge-list">
+<li>Proficient in protocols and standards such as the OSI model, TCP/IP stack, DHCP, and DNS.</li>
+ <li>Familiar with information security tools: SIEM systems, DLP, IDS/IPS, NGFW, firewalls, hashing, and cryptography fundamentals.</li>
+ <li>Knowledge of OWASP TOP 10, MITRE ATT&CK framework, attack types (e.g., DNS-related attacks, ARP spoofing), stages of cyberattacks, and web vulnerabilities.</li>
+ <li>Understanding of regulatory frameworks: Russian Federal Laws (No. 149-FZ, 152-FZ, 187-FZ) and FSTEC standards (Order No. 17, Order No. 21).</li>
+          </ul>
+            <h2 class="section-title">Practical Experience:</h2>
+  <ul class="knowledge-list">
+  <li>Gained hands-on experience with tools such as Wireshark, Nmap, and Scanoval.</li>
+  <li>Conducted attacks like SQL injection, XSS, and SSI using Kali Linux on a vulnerable Bwapp OS.</li>
+  <li>Improved my Linux console and bash scripting skills.</li>
+  <li>Future goals: Deepen my knowledge of Unix-like systems and learn C++ and Python programming.</li>
+     </ul>       
+  <footer class="footer">
+         <a href="/example/simple.html" class="portfolio-link">Portfolio</a>
+     <p class="copyright">© Sergey Egormin</p>
+    <nav class="social_links">
+        <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
+            <img src="/assets/img/icons/telegram.svg" alt="Telegram">
         </a>
-<a href="https://wa.me/79130495432" target="_blank" class="footer__social-item">
+<a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
             <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
           </a>
       </nav>
-    </div>
+  </footer>   
 <script src="/assets/scripts/fslightbox.js"></script>
 </body>
 </html>
