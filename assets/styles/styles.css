@@ -137,6 +137,22 @@ body {
     color: var(--text-color);
 }
 
+.social-button.telegram {
+    background: #2AABEE;
+    color: white;
+}
+
+.social-button.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.social-button img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0)
+}
+
 .social-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
