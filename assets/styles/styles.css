@@ -92,8 +92,8 @@ meter {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
+    background: #000;
     color: #fff;
-    background-color: #000;
 }
 
 .container {
@@ -135,17 +135,18 @@ body {
 }
 
 .section-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: #fff !important;
     margin-bottom: 1.2rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid #4F46E5;
 }
 
 .section-text {
+    font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--text-color);
+    color: #fff !important;
     margin-bottom: 1.5rem;
 }
 
@@ -173,12 +174,12 @@ body {
 }
 
 .social-button.telegram {
-    background: #2AABEE;
+    background: #2AABEE !important;
     color: white;
 }
 
 .social-button.whatsapp {
-    background: #25D366;
+    background: #25D366 !important;
     color: white;
 }
 
@@ -195,7 +196,9 @@ body {
 }
 
 .knowledge-list li {
-    margin: 0.8rem 0;
+    color: #fff;
+    font-size: 1rem;
+    margin: 1rem 0;
     padding-left: 1rem;
     position: relative;
 }
@@ -243,10 +246,10 @@ a:hover {
     align-items: center; /* Добавлено для выравнивания аватара и текста */
     gap: 2.2rem; /* Заменяет margin-left у дочерних элементов */
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent !important;
+    border: none !important;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: none !important;
 }
 
 .profile .avatar {
