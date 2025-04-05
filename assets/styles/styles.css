@@ -174,6 +174,7 @@ a:hover {
 .content__social-item {
     display: flex;
     align-items: center;
+    margin: 0;
 }
 .content__social-item img {
     width: 22px;
