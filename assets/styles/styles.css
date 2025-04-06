@@ -50,13 +50,13 @@ meter {
 }
 
 /***
-    Material Design стили
+    Material Design стили (синяя гамма)
 ***/
 :root {
-  --primary-color: #6200EE;        /* Материал фиолетовый */
-  --accent-color:  #03DAC6;         /* Материал бирюзовый (по умолчанию) */
+  --primary-color: #1976D2;        /* Material Blue 700 */
+  --accent-color:  #448AFF;         /* Material Blue A200 */
   --background-color: #F5F5F5;       /* Светлый фон страницы */
-  --surface-color: #FFFFFF;          /* Цвет карточек/поверхностей */
+  --surface-color: #E3F2FD;          /* Material Blue 50 */
   --text-color: #212121;             /* Основной текст */
   --divider-color: rgba(0, 0, 0, 0.12);
 }
@@ -83,12 +83,12 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #f4eff8;
-    color: #1f1f1f;
+    background-color: #E3F2FD;
+    color: var(--text-color);
     text-align: left;
   }
   .wrapper a {
-    color: #6750a4;
+    color: var(--accent-color);
   }
   /* Изменённые цвета кнопок */
   .wrapper .social-button.telegram {
@@ -171,7 +171,7 @@ body {
   height: 20px;
   margin-right: 0.5rem;
 }
-/* Цвета для кнопок (на мобильных или вне wrapper, если необходимо) */
+/* Цвета для кнопок (на мобильных или вне wrapper) */
 .social-button.telegram {
   background: #29a1dd !important;
   color: #fff;
@@ -181,7 +181,7 @@ body {
   color: #fff;
 }
 
-/* Карточки-секции (подложка белого цвета) */
+/* Карточки-секции (подложка для текста) */
 .section {
   background: var(--surface-color);
   border-radius: 4px;
@@ -214,7 +214,7 @@ body {
   margin: 0;
 }
 
-/* Списки знаний */
+/* Списки знаний (стрелочки и кружочки) */
 .knowledge-list {
   font-size: 1.1rem;
   line-height: 1.7;
@@ -237,7 +237,7 @@ body {
   border-radius: 50%;
 }
 
-/* Ссылка на портфолио (размер шрифта 1.1rem) */
+/* Ссылка на портфолио (размер шрифта 2.5rem) */
 .portfolio-link {
   font-size: 2.5rem;
   text-align: center;
