@@ -55,8 +55,8 @@ meter {
 :root {
   --primary-color: #1976D2;        /* Material Blue 700 */
   --accent-color:  #448AFF;         /* Material Blue A200 */
-  --background-color: #F5F5F5;       /* Светлый фон страницы */
-  --surface-color: #E3F2FD;          /* Material Blue 50 для wrapper */
+  --background-color: #ffffff;       /* Белый фон страницы */
+  --surface-color: #ffffff;          /* Подложка (карточки, wrapper) – белая */
   --text-color: #212121;             /* Основной текст */
   --divider-color: rgba(0, 0, 0, 0.12);
 }
