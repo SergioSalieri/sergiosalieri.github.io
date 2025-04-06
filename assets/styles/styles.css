@@ -56,7 +56,7 @@ meter {
   --primary-color: #1976D2;        /* Material Blue 700 */
   --accent-color:  #448AFF;         /* Material Blue A200 */
   --background-color: #F5F5F5;       /* Светлый фон страницы */
-  --surface-color: #E3F2FD;          /* Material Blue 50 для wrapper и profile */
+  --surface-color: #E3F2FD;          /* Material Blue 50 для wrapper */
   --text-color: #212121;             /* Основной текст */
   --divider-color: rgba(0, 0, 0, 0.12);
 }
@@ -113,14 +113,14 @@ body {
   margin: 0 0.5rem;
 }
 
-/* Профиль */
+/* Профиль (блок "Hey, I'm Sergey" теперь белый) */
 .profile {
   display: flex;
   align-items: center;
   gap: 2rem;
   padding: 1.5rem;
   margin-bottom: 2rem;
-  background: var(--surface-color);
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
