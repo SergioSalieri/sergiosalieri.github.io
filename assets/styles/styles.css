@@ -54,7 +54,7 @@ meter {
 ***/
 :root {
   --primary-color: #6200EE;        /* Материал фиолетовый */
-  --accent-color:  #03DAC6;         /* Материал бирюзовый (используется, если не переопределено) */
+  --accent-color:  #03DAC6;         /* Материал бирюзовый (по умолчанию) */
   --background-color: #F5F5F5;       /* Светлый фон страницы */
   --surface-color: #FFFFFF;          /* Цвет карточек/поверхностей */
   --text-color: #212121;             /* Основной текст */
@@ -90,11 +90,14 @@ body {
   .wrapper a {
     color: #6750a4;
   }
+  /* Изменённые цвета кнопок */
   .wrapper .social-button.telegram {
     background-color: #29a1dd !important;
+    color: #fff;
   }
   .wrapper .social-button.whatsapp {
     background-color: #0cc143 !important;
+    color: #fff;
   }
 }
 
@@ -168,7 +171,7 @@ body {
   height: 20px;
   margin-right: 0.5rem;
 }
-/* Цвета для конкретных кнопок */
+/* Цвета для кнопок (на мобильных или вне wrapper, если необходимо) */
 .social-button.telegram {
   background: #29a1dd !important;
   color: #fff;
@@ -178,7 +181,7 @@ body {
   color: #fff;
 }
 
-/* Карточки-секции */
+/* Карточки-секции (подложка белого цвета) */
 .section {
   background: var(--surface-color);
   border-radius: 4px;
@@ -234,7 +237,7 @@ body {
   border-radius: 50%;
 }
 
-/* Ссылка на портфолио */
+/* Ссылка на портфолио (размер шрифта 1.1rem) */
 .portfolio-link {
   font-size: 2.5rem;
   text-align: center;
