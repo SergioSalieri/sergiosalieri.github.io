@@ -56,7 +56,7 @@ meter {
   --primary-color: #1976D2;        /* Material Blue 700 */
   --accent-color:  #448AFF;         /* Material Blue A200 */
   --background-color: #ffffff;       /* Белый фон страницы */
-  --surface-color: #ffffff;          /* Подложка (карточки, wrapper) – белая */
+  --surface-color: #ffffff;          /* Подложка wrapper – оставляем белой */
   --text-color: #212121;             /* Основной текст */
   --divider-color: rgba(0, 0, 0, 0.12);
 }
@@ -113,14 +113,14 @@ body {
   margin: 0 0.5rem;
 }
 
-/* Профиль (блок "Hey, I'm Sergey" теперь белый) */
+/* Профиль (блок "Hey, I'm Sergey" – фон изменён на #ECEFF1) */
 .profile {
   display: flex;
   align-items: center;
   gap: 2rem;
   padding: 1.5rem;
   margin-bottom: 2rem;
-  background: #ffffff;
+  background: #ECEFF1;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -181,9 +181,9 @@ body {
   color: #fff;
 }
 
-/* Карточки-секции: подложка для текста – белая */
+/* Карточки-секции: фон для блоков (About Me, Theoretical Knowledge, Practical Experience) – #ECEFF1 */
 .section {
-  background: #ffffff;
+  background: #ECEFF1;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 2rem 0;
