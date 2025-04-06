@@ -1,77 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Обо мне</title>
   <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
+  <!-- Подключение шрифта Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="main">
-  <div class="header">
-    <a href="/">
-      <span>EN</span>
-    </a>
-    <span>|</span>
-    <a href="/ru">
-      <span>RU</span>
-    </a>
-  </div>
-  <div class="content">
-    <div class="content__hello">
-      <img class="content__hello-img" src="/assets/img/avatar.png" alt="Avatar">
-      <div class="content__hello-text">
-                    <span class="content__name">
-                        <a href="/ru/index.html">Привет, я Сергей.</a>
-                    </span>
-         <nav class="content__social">
-                   <a href="https://t.me/sergio_salieri" target="_blank" class="content__social-item">
+  <div class="wrapper">
+    <header class="header">
+      <a href="/"><span>EN</span></a>
+      <span>|</span>
+      <a href="/ru"><span>RU</span></a>
+    </header>
+
+    <section class="profile">
+      <!-- Кликабельный аватар возвращает на главную страницу русской версии -->
+      <a href="/ru/index.html"><img class="avatar" src="/assets/img/avatar.png" alt="Avatar"></a>
+      <div class="content__name">
+        <h1 class="title">Привет, я Сергей</h1>
+        <div class="social-links">
+          <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
             <img src="/assets/img/icons/telegram.svg" alt="Telegram">
             <span>Telegram</span>
           </a>
-         <a href="https://wa.me/79130495432" target="_blank" class="content__social-item">
+          <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
             <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
             <span>Whatsapp</span>
           </a>
-        </nav>
-        <span class="content__description"> <br/> </br> <b>Обо мне</b><br/> Я начинающий специалист в информационной безопасности, 
-          бывший системный администратор с 3.5 годом стажа. За последнее время я изучил и изучаю много теории и практики в этой области. 
-        </br> </br> <b>Теоретическая часть:</b>
-        </br> &#9658; Знаю и применяю множество протоколов и стандартов, такие как – модель OSI, стек протоколов TCP/IP, DHCP, DNS.  
-        </br> &#9658; Знаю что такое средства защиты информации, SIEM системы, DLP, IDS/IPS, NGFW, межсетевые экраны, хэширование, основы криптографии. 
-        </br> &#9658; OWASP TOP 10, Mitre & Attack, виды атак, атаки связанные с DNS, атаки связанные с ARP, этапы проведения атаки, уязвимости в WEB. 
-        </br> &#9658; Нормативные документы, ФЗ, ПП, ФСТЭК, а именно 149 ФЗ, 152 ФЗ, 187 ФЗ, ФСТЭК № 17, ФСТЭК № 21. 
-        </br> </br> <b>Практическая часть:</b>
-        </br> &#9658; Познакомился с такими инструментами как – Wireshark, Nmap, Scanoval. 
-        </br> &#9658; Проводил атаки типа SQL-injection, XSS, SSI с ОС Kali Linux на уязвимую ОС Bwapp. 
-        </br> &#9658; Получше изучил консоль Linux и bash скрипты. 
-        </br> &#9658; В планах изучить unix системы поглубже и научиться программировать на C++ и Python.
-        </span>
-      </div>
-    </div>
-    <div class="content__main">
-      <div class="content__main-item">
-        <div class="main-item__description">
-          <p>Портфолио - <a href="/ru/example/simple.html">ссылка</a></p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div>
-      <span>© Сергей Егормин</span>
-    </div>
-    <div>
+    </section>
+
+    <a href="/ru/example/simple.html" class="portfolio-link">Портфолио</a>
+
+    <section class="section">
+      <h2 class="section-title">Обо мне</h2>
+      <p class="section-text">
+        Я начинающий специалист в области информационной безопасности и бывший системный администратор с 3.5 годами опыта. За последнее время я изучил и продолжаю изучать как теорию, так и практику в этой области.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Теоретическая часть:</h2>
+      <ul class="knowledge-list">
+        <li>Знаю и применяю множество протоколов и стандартов, таких как модель OSI, стек протоколов TCP/IP, DHCP, DNS.</li>
+        <li>Знаком с инструментами защиты информации: SIEM системы, DLP, IDS/IPS, NGFW, межсетевые экраны, хэширование, основы криптографии.</li>
+        <li>Знаю OWASP TOP 10, MITRE ATT&CK, виды атак (например, атаки, связанные с DNS или ARP), этапы проведения атаки, уязвимости веб-приложений.</li>
+        <li>Знаком с нормативными документами: ФЗ, ПП, ФСТЭК – в частности, 149 ФЗ, 152 ФЗ, 187 ФЗ, ФСТЭК № 17, ФСТЭК № 21.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Практическая часть:</h2>
+      <ul class="knowledge-list">
+        <li>Работал с такими инструментами, как Wireshark, Nmap, Scanoval.</li>
+        <li>Проводил атаки типа SQL-инъекции, XSS и SSI с использованием Kali Linux на уязвимой ОС Bwapp.</li>
+        <li>Углубил свои знания работы в консоли Linux и bash-скриптах.</li>
+        <li>В планах изучить Unix-системы поглубже и научиться программировать на C++ и Python.</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
       <nav class="footer__social">
-                <a href="https://t.me/sergio_salieri" target="_blank" class="footer__social-item">
+        <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
           <img src="/assets/img/icons/telegram.svg" alt="Telegram">
         </a>
-<a href="https://wa.me/79130495432" target="_blank" class="footer__social-item">
-            <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
-          </a>
+        <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
+          <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
+        </a>
       </nav>
-    </div>
+      <p class="copyright">© Сергей Егормин</p>
+    </footer>
   </div>
-</div>
-<script src="/assets/scripts/fslightbox.js"></script>
+
+  <script src="/assets/scripts/fslightbox.js"></script>
 </body>
 </html>
