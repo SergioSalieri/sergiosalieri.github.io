@@ -252,11 +252,7 @@ body {
   opacity: 0.7;
   text-decoration: underline;
 }
-.portfolio-link::before {
-  content: "→";
-  margin-right: 0.5rem;
-  color: var(--accent-color);
-}
+
 
 /* Футер */
 .footer {
