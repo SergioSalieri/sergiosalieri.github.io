@@ -55,8 +55,8 @@ meter {
 :root {
   --primary-color: #1976D2;        /* Material Blue 700 */
   --accent-color:  #448AFF;         /* Material Blue A200 */
-  --background-color: #FFFFFF;       /* Светлый фон страницы */
-  --surface-color: #FFFFFF;          /* Material Blue 50 */
+  --background-color: #F5F5F5;       /* Светлый фон страницы */
+  --surface-color: #E3F2FD;          /* Material Blue 50 для wrapper и profile */
   --text-color: #212121;             /* Основной текст */
   --divider-color: rgba(0, 0, 0, 0.12);
 }
@@ -77,13 +77,13 @@ body {
   padding: 2rem;
 }
 
-/* Подложка для десктопной версии */
+/* Подложка для десктопной версии (обёртка) */
 @media (min-width: 1024px) {
   .wrapper {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #ffffff;
+    background-color: var(--surface-color);
     color: var(--text-color);
     text-align: left;
   }
@@ -171,7 +171,7 @@ body {
   height: 20px;
   margin-right: 0.5rem;
 }
-/* Цвета для кнопок (на мобильных или вне wrapper) */
+/* Цвета для кнопок */
 .social-button.telegram {
   background: #29a1dd !important;
   color: #fff;
@@ -181,9 +181,9 @@ body {
   color: #fff;
 }
 
-/* Карточки-секции (подложка для текста) */
+/* Карточки-секции: подложка для текста – белая */
 .section {
-  background: var(--surface-color);
+  background: #ffffff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 2rem 0;
