@@ -188,8 +188,9 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* Заголовки и основной текст теперь используют один и тот же размер шрифта */
 .section-title {
-  font-size: 1.8rem;
+  font-size: var(--content-font-size); /* было 1.8rem, изменено на 1.3rem */
   font-weight: 600;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
@@ -207,8 +208,7 @@ body {
   line-height: 1.8;
   margin: 0;
 }
-
-/* Списки знаний (стрелочки и кружочки) */
+/* Обеспечиваем одинаковый размер для элементов списка */
 .knowledge-list {
   font-size: var(--content-font-size);
   line-height: 1.7;
@@ -216,6 +216,7 @@ body {
   margin: 0;
 }
 .knowledge-list li {
+  font-size: var(--content-font-size);
   margin: 1rem 0;
   padding-left: 1rem;
   position: relative;
@@ -270,8 +271,7 @@ body {
   opacity: 0.8;
 }
 
-/* Медиа-запрос для мобильной версии */
-/* Добавляем отступ для .wrapper на экранах меньше 1024px, чтобы точки в списках не прилипали к краю */
+/* Mobile adjustments */
 @media (max-width: 1023px) {
   .wrapper {
     padding: 1rem;
