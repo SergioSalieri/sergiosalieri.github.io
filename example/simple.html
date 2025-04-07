@@ -1,123 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About me</title>
-    <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
+  <!-- Google Fonts: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="main">
-    <div class="header">
-        <a href="/">
-            <span>EN</span>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <a href="/"><span>EN</span></a>
+      <span>|</span>
+      <a href="/ru"><span>RU</span></a>
+    </header>
+
+    <!-- Profile -->
+    <section class="profile">
+      <a href="/"><img class="avatar" src="/assets/img/avatar.png" alt="Avatar"></a>
+      <div class="content__name">
+        <h1 class="title">Hi, I'm Sergey</h1>
+        <nav class="social-links">
+          <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
+            <img src="/assets/img/icons/telegram.svg" alt="Telegram">
+            <span>Telegram</span>
+          </a>
+          <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
+            <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
+            <span>Whatsapp</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Section description -->
+    <section class="section">
+      <h2 class="section-title">Technical Assignments</h2>
+      <p class="section-text">
+        Check out my latest completed technical assignments. They speak louder than words.
+      </p>
+    </section>
+
+    <!-- Assignment blocks -->
+    <section class="section">
+      <!-- Assignment 1 -->
+      <div style="text-align: center;">
+        <div class="main-item__title">
+          <a href="/tasks/Task1_Sergey_Egomin.pdf">
+            <span>TA 1</span>
+          </a>
+        </div>
+        <div class="main-item__description">
+          <p>
+            This project is my gem. I’m very proud of the work I accomplished.
+            The client found me when the project was nearly at the MVP stage. However, the code quality wasn’t sufficient, so I restructured the entire system and built a robust architectural foundation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Assignment 2 -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <div class="main-item__title">
+          <a href="/tasks/Task2_Sergey_Egomin.pdf">
+            <span>TA 2</span>
+          </a>
+        </div>
+        <div class="main-item__description">
+          <p>
+            I worked on this project for 1.5 years.<br>
+            I built the entire system from scratch, and now it is a fully functional project with many satisfied clients.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__social">
+        <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
+          <img src="/assets/img/icons/telegram.svg" alt="Telegram">
         </a>
-        <span>|</span>
-        <a href="/ru">
-            <span>RU</span>
+        <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
+          <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
         </a>
-    </div>
-    <div class="content">
-        <div class="content__hello">
-            <img class="content__hello-img" src="/assets/img/avatar.png" alt="Avatar">
-            <div class="content__hello-text">
-                    <span class="content__name">
-                        <a href="/"> Hey, I'm Sviatoslav.</a>
-                    </span>
-                <span class="content__description">Here you can find <br/> who am I and what am I doing</span>
-                <nav class="content__social">
-                    <a href="#link" target="_blank" class="content__social-item">
-                        <img src="/assets/img/icons/twitter.svg" alt="Twitter">
-                        <span>Twitter</span>
-                    </a>
-                    <a href="#link" target="_blank" class="content__social-item">
-                        <img src="/assets/img/icons/facebook.svg" alt="Facebook">
-                        <span>Facebook</span>
-                    </a>
-                    <a href="#link" target="_blank" class="content__social-item">
-                        <img src="/assets/img/icons/in.svg" alt="LinkedIn">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="#link" target="_blank" class="content__social-item">
-                        <img src="/assets/img/icons/telegram.svg" alt="Telegram">
-                        <span>Telegram</span>
-                    </a>
-                </nav>
-            </div>
-        </div>
-        <div class="content__main">
-            <div class="content__main-item">
-                <div class="main-item__description">
-                    <p>I'm working with the small business or individual customers only.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis dolor sed dolor vestibulum pulvinar id vitae sapien. Pellentesque dignissim finibus mi. Nulla quis quam non est blandit tempus. Sed mauris ex, commodo sed nunc ac, lacinia aliquet nulla.</p>
-                </div>
-            </div>
-            <div class="content__main-item">
-                <div class="main-item__description">
-                    <p>But don't trust my just by words. Check out my latest projects. They will present my a way better then just words.</p>
-                </div>
-            </div>
-            <h2 class="content__subheader">Projects</h2>
-            <div class="content__main-item project">
-                <a data-fslightbox href="/assets/img/project.png">
-                    <img src="/assets/img/project.png" alt="project1">
-                </a>
-                <div>
-                    <div class="main-item__title">
-                        <a href="/example/project.html"><span>Project 1</span></a>
-                    </div>
-                    <div class="main-item__description">
-                        <p>This project is my diamond. I'm very proud of work that I did there.
-                            This customer found me when project was in almost MVP state. But code quality was not good enough, so I rebuild the whole system and made a strong architecture basement</p>
-                    </div>
-                    <div class="main-item__subdescription">
-                        <p><span>Stack:</span> Vue.js, Laravel, Socket.io</p>
-                        <p class="main-item__links"><a href=""><span>Source Code</span></a><span>|</span><a href=""><span>Preview</span></a> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content__main-item project">
-                <a data-fslightbox href="/assets/img/project2.png">
-                    <img src="/assets/img/project2.png" alt="project2">
-                </a>
-                <div>
-                    <div class="main-item__title">
-                        <a href="/example/project.html"><span>Project 1</span></a>
-                    </div>
-                    <div class="main-item__description">
-                        <p>I worked with this project for 1,5 years.
-                            <br/>I've built the whole system from scratch, and now it's fully working project
-                            with a bunch of happy customers</p>
-                    </div>
-                    <div class="main-item__subdescription">
-                        <p><span>Stack:</span> Nuxt.js, Laravel</p>
-                        <p class="main-item__links"><a href=""><span>Source Code</span></a><span>|</span><a href=""><span>Preview</span></a> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div>
-            <span>© Sviatoslav Zhilichev</span>
-        </div>
-        <div>
-            <nav class="footer__social">
-                <a href="#link" target="_blank" class="footer__social-item">
-                    <img src="/assets/img/icons/twitter.svg" alt="Twitter">
-                </a>
-                <a href="#link" target="_blank" class="footer__social-item">
-                    <img src="/assets/img/icons/facebook.svg" alt="Facebook">
-                </a>
-                <a href="#link" target="_blank" class="footer__social-item">
-                    <img src="/assets/img/icons/in.svg" alt="LinkedIn">
-                </a>
-                <a href="#link" target="_blank" class="footer__social-item">
-                    <img src="/assets/img/icons/telegram.svg" alt="Telegram">
-                </a>
-            </nav>
-        </div>
-    </div>
-</div>
-<script src="/assets/scripts/fslightbox.js"></script>
+      </nav>
+      <p class="copyright">© Sergey Egomin</p>
+    </footer>
+  </div>
+  <script src="/assets/scripts/fslightbox.js"></script>
 </body>
 </html>
