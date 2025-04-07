@@ -1,68 +1,30 @@
-/***
-    CSS Reset
-***/
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
-}
+/* 
+   Минимальный reset: убираем отступы и 
+   приводим box-sizing к единому значению.
+*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-a, button {
-  cursor: revert;
-}
-ol, ul, menu {
-  list-style: none;
-}
-img {
-  max-width: 100%;
-}
-table {
-  border-collapse: collapse;
-}
-input, textarea {
-  -webkit-user-select: auto;
-}
-textarea {
-  white-space: revert;
-}
-meter {
-  -webkit-appearance: revert;
-  appearance: revert;
-}
-::placeholder {
-  color: unset;
-}
-:where([hidden]) {
-  display: none;
-}
-:where([contenteditable]:not([contenteditable="false"])) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
-}
-:where([draggable="true"]) {
-  -webkit-user-drag: element;
+  margin: 0;
+  padding: 0;
 }
 
 /***
-    Material Design стили (синяя гамма)
+    Переменные (Material Design, синие оттенки)
 ***/
 :root {
-  --primary-color: #1976D2;
-  --accent-color:  #448AFF;
-  --background-color: #ECEFF1;
-  --surface-color: #ffffff;
-  --text-color: #212121;
+  --primary-color: #1976D2;         /* Material Blue 700 */
+  --accent-color:  #448AFF;         /* Material Blue A200 */
+  --background-color: #ECEFF1;      /* Фон страницы */
+  --surface-color: #ffffff;         /* Подложка для блоков */
+  --text-color: #212121;            /* Основной текст */
   --divider-color: rgba(0, 0, 0, 0.12);
 }
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth; /* Опционально: плавная прокрутка */
 }
 
 body {
@@ -70,18 +32,26 @@ body {
   background: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;  уже обнулён через reset */
+  /* padding: 0; уже обнулён через reset */
 }
 
-/* Контейнер для базового отступа */
+/* Контейнер для базового отступа (если нужно) */
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* Подложка для десктопной версии (обёртка) */
+/* Обёртка: фон и отступы для десктопной версии */
+.wrapper {
+  /* Для мобильных устройств пусть будет адаптивно,
+     а на больших экранах центрируем и даём фон. */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 @media (min-width: 1024px) {
   .wrapper {
     max-width: 800px;
@@ -94,7 +64,8 @@ body {
   .wrapper a {
     color: var(--accent-color);
   }
-  /* Изменённые цвета кнопок */
+
+  /* Изменённые цвета кнопок для десктопа */
   .wrapper .social-button.telegram {
     background-color: #29a1dd !important;
     color: #fff;
@@ -109,7 +80,7 @@ body {
 .header {
   display: flex;
   justify-content: flex-end;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 .header a {
   color: var(--primary-color);
@@ -117,7 +88,7 @@ body {
   margin: 0 0.5rem;
 }
 
-/* Профиль (блок "Hey, I'm Sergey" – фон белый) */
+/* Профиль (блок "Hey, I'm Sergey") */
 .profile {
   display: flex;
   align-items: center;
@@ -185,7 +156,23 @@ body {
   color: #fff;
 }
 
-/* Карточки-секции: фон для блоков – белый */
+/* Ссылка на портфолио (размер шрифта 2.5rem) */
+.portfolio-link {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 2rem 0;
+  display: block;
+  transition: opacity 0.2s;
+}
+.portfolio-link:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* Общие стили для секций */
 .section {
   background: var(--surface-color);
   border-radius: 4px;
@@ -213,14 +200,13 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Общее оформление содержимого секций */
+/* Текст и списки внутри секций */
 .section-content {
   font-size: 1.1rem;
   line-height: 1.8;
   margin: 0;
 }
 
-/* Если секция-контент является списком, задаём для его элементов дополнительные отступы */
 .section-content li {
   margin: 1rem 0;
   padding-left: 1rem;
@@ -235,22 +221,6 @@ body {
   height: 6px;
   background: var(--accent-color);
   border-radius: 50%;
-}
-
-/* Ссылка на портфолио (размер шрифта 2.5rem) */
-.portfolio-link {
-  font-size: 2.5rem;
-  text-align: center;
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 600;
-  margin: 2rem 0;
-  display: block;
-  transition: opacity 0.2s;
-}
-.portfolio-link:hover {
-  opacity: 0.7;
-  text-decoration: underline;
 }
 
 /* Футер */
@@ -270,7 +240,7 @@ body {
   color: var(--primary-color);
   text-decoration: none;
 }
-.copyright {
+copyright {
   font-size: 0.9rem;
   color: var(--text-color);
   opacity: 0.8;
