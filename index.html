@@ -1,21 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>About me</title>
-  <!-- Мета-тег для корректного отображения на мобильных устройствах -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Подключение внешнего CSS -->
+  <title>Обо мне</title>
   <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
-
   <!-- Подключение шрифта Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper">
@@ -26,23 +18,16 @@
     </header>
 
     <section class="profile">
-      <a href="/"><img class="avatar" src="/assets/img/avatar.png" alt="Avatar"></a>
+      <!-- Кликабельный аватар возвращает на главную страницу русской версии -->
+      <a href="/ru/index.html"><img class="avatar" src="/assets/img/avatar.png" alt="Avatar"></a>
       <div class="content__name">
-        <h1 class="title">Hey, I'm Sergey</h1>
+        <h1 class="title">Привет, я Сергей</h1>
         <div class="social-links">
-          <a
-            href="https://t.me/sergio_salieri"
-            target="_blank"
-            class="social-button telegram"
-          >
+          <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
             <img src="/assets/img/icons/telegram.svg" alt="Telegram">
             <span>Telegram</span>
           </a>
-          <a
-            href="https://wa.me/79130495432"
-            target="_blank"
-            class="social-button whatsapp"
-          >
+          <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
             <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
             <span>Whatsapp</span>
           </a>
@@ -50,55 +35,45 @@
       </div>
     </section>
 
-    <a href="/example/simple.html" class="portfolio-link">Portfolio</a>
+    <a href="/ru/example/simple.html" class="portfolio-link">Портфолио</a>
 
     <section class="section">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-content">
-        I am an aspiring information security specialist and former system administrator with 3.5 years of experience. Over the past year, I have been actively studying both theoretical and practical aspects of the field.
+      <h2 class="section-title">Обо мне</h2>
+      <p class="section-text">
+        Я начинающий специалист в области информационной безопасности и бывший системный администратор с 3.5 годами опыта. За последнее время я изучил и продолжаю изучать как теорию, так и практику в этой области.
       </p>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Theoretical Knowledge:</h2>
-      <ul class="section-content">
-        <li>Proficient in protocols and standards such as the OSI model, TCP/IP stack, DHCP, and DNS.</li>
-        <li>Familiar with information security tools: SIEM systems, DLP, IDS/IPS, NGFW, firewalls, hashing, and cryptography fundamentals.</li>
-        <li>Knowledge of OWASP TOP 10, MITRE ATT&CK framework, attack types (e.g., DNS-related attacks, ARP spoofing), stages of cyberattacks, and web vulnerabilities.</li>
-        <li>Understanding of regulatory frameworks: Russian Federal Laws (No. 149-FZ, 152-FZ, 187-FZ) and FSTEC standards (Order No. 17, Order No. 21).</li>
+      <h2 class="section-title">Теоретическая часть:</h2>
+      <ul class="knowledge-list">
+        <li>Знаю и применяю множество протоколов и стандартов, таких как модель OSI, стек протоколов TCP/IP, DHCP, DNS.</li>
+        <li>Знаком с инструментами защиты информации: SIEM системы, DLP, IDS/IPS, NGFW, межсетевые экраны, хэширование, основы криптографии.</li>
+        <li>Знаю OWASP TOP 10, MITRE ATT&CK, виды атак (например, атаки, связанные с DNS или ARP), этапы проведения атаки, уязвимости веб-приложений.</li>
+        <li>Знаком с нормативными документами: ФЗ, ПП, ФСТЭК – в частности, 149 ФЗ, 152 ФЗ, 187 ФЗ, ФСТЭК № 17, ФСТЭК № 21.</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Practical Experience:</h2>
-      <ul class="section-content">
-        <li>Gained hands-on experience with tools such as Wireshark, Nmap, and Scanoval.</li>
-        <li>Conducted attacks like SQL injection, XSS, and SSI using Kali Linux on a vulnerable Bwapp OS.</li>
-        <li>Improved my Linux console and bash scripting skills.</li>
-        <li>Future goals: Deepen my knowledge of Unix-like systems and learn C++ and Python programming.</li>
+      <h2 class="section-title">Практическая часть:</h2>
+      <ul class="knowledge-list">
+        <li>Работал с такими инструментами, как Wireshark, Nmap, Scanoval.</li>
+        <li>Проводил атаки типа SQL-инъекции, XSS и SSI с использованием Kali Linux на уязвимой ОС Bwapp.</li>
+        <li>Углубил свои знания работы в консоли Linux и bash-скриптах.</li>
+        <li>В планах изучить Unix-системы поглубже и научиться программировать на C++ и Python.</li>
       </ul>
     </section>
 
     <footer class="footer">
       <nav class="footer__social">
-        <a
-          href="https://t.me/sergio_salieri"
-          target="_blank"
-          class="social-button telegram"
-        >
+        <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
           <img src="/assets/img/icons/telegram.svg" alt="Telegram">
         </a>
-        <a
-          href="https://wa.me/79130495432"
-          target="_blank"
-          class="social-button whatsapp"
-        >
+        <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
           <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
         </a>
       </nav>
-      <p class="copyright">
-        © Sergey Egormin
-      </p>
+      <p class="copyright">© Сергей Егормин</p>
     </footer>
   </div>
 
