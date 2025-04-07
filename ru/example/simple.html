@@ -1,85 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Обо мне</title>
-    <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
+  <meta charset="UTF-8">
+  <title>Обо мне</title>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
+  <!-- Подключение шрифта Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="main">
-    <div class="header">
-        <a href="/">
-            <span>EN</span>
-        </a>
-        <span>|</span>
-        <a href="/ru">
-            <span>RU</span>
-        </a>
-    </div>
-    <div class="content">
-        <div class="content__hello">
-            <img class="content__hello-img" src="/assets/img/avatar.png" alt="Avatar">
-            <div class="content__hello-text">
-                    <span class="content__name">
-                        <a href="/">Привет, я Сергей.</a>
-                    </span>
-                <nav class="content__social">
-                     <a href="https://t.me/sergio_salieri" target="_blank" class="content__social-item">
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <a href="/"><span>EN</span></a>
+      <span>|</span>
+      <a href="/ru"><span>RU</span></a>
+    </header>
+
+    <!-- Профиль -->
+    <section class="profile">
+      <a href="/"><img class="avatar" src="/assets/img/avatar.png" alt="Avatar"></a>
+      <div class="content__name">
+        <h1 class="title">Привет, я Сергей</h1>
+        <nav class="social-links">
+          <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
             <img src="/assets/img/icons/telegram.svg" alt="Telegram">
             <span>Telegram</span>
           </a>
-         <a href="https://wa.me/79130495432" target="_blank" class="content__social-item">
+          <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
             <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
             <span>Whatsapp</span>
           </a>
-                </nav>
-            </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Описание раздела с ТЗ -->
+    <section class="section">
+      <h2 class="section-title">Технические задания</h2>
+      <p class="section-text">
+        Посмотрите мои последние решенные технические задачи. Они представят меня лучше, чем просто слова.
+      </p>
+    </section>
+
+    <!-- Блоки с заданиями -->
+    <section class="section">
+      <!-- Блок ТЗ 1 -->
+      <div style="text-align: center;">
+        <div class="main-item__title">
+          <a href="/tasks/ДЗ №1 Егормин С. В..pdf">
+            <span>ТЗ 1</span>
+          </a>
         </div>
-      <div class="content__main-item">
-                <div class="main-item__description">
-                    <p> Посмотрите мои последние решенные технические задачи. Они представят меня лучше, чем просто слова.</p>
-                </div>
-            </div>
-            <h2 class="content__subheader">Технические задания</h2>
-           <div>
-                    <div class="main-item__title">
-                        <a href="/tasks/ДЗ №1 Егормин С. В..pdf"><span>ТЗ 1</span></a>
-                    </div>
-                    <div class="main-item__description">
-                        <p>Этот проект — мой бриллиант. Я очень горжусь работой, которую я там проделал.
-                            Этот клиент нашел меня, когда проект был почти в состоянии MVP. Но качество кода было недостаточно хорошим, поэтому я перестроил всю систему и сделал крепкий архитектурный фундамент.</p>
-                    </div> 
-                </div>
-            </div>
-                <div>
-                    <div class="main-item__title">
-                        <a href="/tasks/ДЗ №2 Егормин С. В..pdf"><span>ТЗ 2</span></a>
-                    </div>
-                    <div class="main-item__description">
-                        <p>Я работал над этим проектом 1,5 года.
-                            <br/>Я построил всю систему с нуля, и теперь это полностью рабочий проект
-                            с кучей довольных клиентов</p>
-                    </div>
-                </div>
-            </div>
+        <div class="main-item__description">
+          <p>
+            Этот проект — мой бриллиант. Я очень горжусь работой, которую я там проделал.
+            Этот клиент нашел меня, когда проект был почти в состоянии MVP. Но качество кода было недостаточно хорошим, поэтому я перестроил всю систему и сделал крепкий архитектурный фундамент.
+          </p>
         </div>
-    </div>
-    <div class="footer">
-        <div>
-            <span>© Сергей Егормин</span>
+      </div>
+
+      <!-- Блок ТЗ 2 -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <div class="main-item__title">
+          <a href="/tasks/ДЗ №2 Егормин С. В..pdf">
+            <span>ТЗ 2</span>
+          </a>
         </div>
-        <div>
-            <nav class="footer__social">
-                <a href="https://t.me/sergio_salieri" target="_blank" class="footer__social-item">
+        <div class="main-item__description">
+          <p>
+            Я работал над этим проектом 1,5 года.<br>
+            Я построил всю систему с нуля, и теперь это полностью рабочий проект с кучей довольных клиентов.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__social">
+        <a href="https://t.me/sergio_salieri" target="_blank" class="social-button telegram">
           <img src="/assets/img/icons/telegram.svg" alt="Telegram">
         </a>
-<a href="https://wa.me/79130495432" target="_blank" class="footer__social-item">
-            <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
-          </a>
-            </nav>
-        </div>
-    </div>
-</div>
-<script src="/assets/scripts/fslightbox.js"></script>
+        <a href="https://wa.me/79130495432" target="_blank" class="social-button whatsapp">
+          <img src="/assets/img/icons/whatsapp.svg" alt="Whatsapp">
+        </a>
+      </nav>
+      <p class="copyright">© Сергей Егормин</p>
+    </footer>
+  </div>
+  <script src="/assets/scripts/fslightbox.js"></script>
 </body>
 </html>
