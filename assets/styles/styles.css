@@ -53,12 +53,16 @@ meter {
     Material Design стили (синяя гамма)
 ***/
 :root {
-  --primary-color: #1976D2;        /* Material Blue 700 */
-  --accent-color:  #448AFF;         /* Material Blue A200 */
-  --background-color: #ECEFF1;       /* Фон страницы */
-  --surface-color: #ffffff;          /* Подложка для блоков */
-  --text-color: #212121;             /* Основной текст */
+  --primary-color: #1976D2;
+  --accent-color:  #448AFF;
+  --background-color: #ECEFF1;
+  --surface-color: #ffffff;
+  --text-color: #212121;
   --divider-color: rgba(0, 0, 0, 0.12);
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -208,25 +212,21 @@ body {
   color: var(--accent-color);
   margin-right: 0.5rem;
 }
-.section-text {
+
+/* Общее оформление содержимого секций */
+.section-content {
   font-size: 1.1rem;
   line-height: 1.8;
   margin: 0;
 }
 
-/* Списки знаний (стрелочки и кружочки) */
-.knowledge-list {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  padding-left: 1.5rem;
-  margin: 0;
-}
-.knowledge-list li {
+/* Если секция-контент является списком, задаём для его элементов дополнительные отступы */
+.section-content li {
   margin: 1rem 0;
   padding-left: 1rem;
   position: relative;
 }
-.knowledge-list li::before {
+.section-content li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -252,7 +252,6 @@ body {
   opacity: 0.7;
   text-decoration: underline;
 }
-
 
 /* Футер */
 .footer {
